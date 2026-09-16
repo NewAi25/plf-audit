@@ -2,6 +2,7 @@
 # Only the source list is committed. See notes/decisions.md, 2026-09-16.
 corpus/*
 !corpus/README.md
+!corpus/manifest.csv
 __pycache__/
 *.pyc
 .DS_Store

@@ -41,7 +41,7 @@ Everything here comes from public documentation: vendor marketing pages, manuals
 
 Reliability is checked the same way throughout. A random 10% of claims, drawn with a fixed seed, is re coded blind at least seven days after the original coding, and a second coder codes the same rows. Agreement per field is reported in the write up.
 
-The source documents are not in this repository because several are large and some are copyrighted. `corpus/README.md` lists every file with its source so the folder can be rebuilt.
+The source documents are not in this repository because several are large and some are copyrighted. `corpus/README.md` lists every file with its source, and `corpus/manifest.csv`, which is committed, records the exact URL and SHA256 of each, so the folder can be rebuilt and checked.
 
 ## How to re run the scoring next year
 
@@ -73,7 +73,7 @@ Compare the data and the printed numbers with the previous release using `git di
 | Proxy drift | Optimising a measurable proxy that has stopped tracking the animal's interests. The indicator validity dimension is the instrument for detecting it |
 | Precision welfare | PLF designed around the animal's interests rather than production alone |
 | ICAR | The International Committee for Animal Recording, whose sensor validation scheme is the nearest existing scheme to this standard |
-| Corpus | The source documents, listed in `corpus/README.md` and verified by `corpus/manifest.csv`; not committed to git |
+| Corpus | The source documents, listed in `corpus/README.md` and verified by `corpus/manifest.csv`. The manifest is committed; the documents themselves are not |
 | Audit | The pre push check: mechanical validation, then a separate agent verifying every claim against the sources, logged in `notes/audit_log.md` |
 
 ## Licence

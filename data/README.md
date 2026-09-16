@@ -13,10 +13,10 @@ One row per product in the register. Twenty products plus one comparator as of 1
 | product_id | P001 onwards | Identifier used by claims.csv and scorecard.csv |
 | vendor | text | Company name as it trades today, with the earlier name in brackets where it changed |
 | product | text | Product name as the vendor uses it |
-| sensor_type | collar_accelerometer, ear_tag, bolus, camera, milking_system, other | The main sensing hardware. Leg mounted accelerometers and load cell plates are coded other, with the mounting named in notes |
+| sensor_type | collar_accelerometer, ear_tag, bolus, camera, milking_system, other | The main sensing hardware. Coded other for leg mounted accelerometers, the load cell walkover plate, in line milk biomarker analysis and the three ICAR milk analysers, with the real hardware named in measures_claimed or notes |
 | measures_claimed | text | What the product says it measures, copied from the Stygar appendix for Stygar sourced rows |
 | species | text | dairy cattle for every row except the comparator |
-| country | text | Vendor country, from the Stygar appendix or the ICAR report |
+| country | text | Vendor country. From the Stygar appendix for Stygar rows; from the ICAR evaluation report for Ekomilk; from the vendor websites for Brolis and Panazoo, whose ICAR reports name no country |
 | stygar_listed | yes, no | Whether the product appears in the Stygar et al. 2021 appendix of 129 technologies |
 | stygar_validation | none, external_self, external_independent, not_listed | Stygar's validation finding. none means listed with no external validation study found. external_self means every cited study had a developer or company author. external_independent means at least one cited study had none. not_listed means the product is not in the appendix |
 | icar_validated | yes, no | Whether the product is on the ICAR validated sensor systems list |
@@ -50,7 +50,7 @@ One row per welfare claim per product. Empty until the register is coded in week
 | legal_flag | none, cap_3_7_unsubstantiated | Set when a welfare claim cites no evidence at all |
 | notes | text | Other pages where the claim repeats, page numbers, sibling claims, candidate indicators for unsure rows |
 
-Empty means: mapped_indicator_id is empty when mapping_confidence is none or unsure; evidence_ref is empty when evidence_cited is none. No other column may be empty.
+Empty means: mapped_indicator_id is empty when mapping_confidence is none or unsure; evidence_ref is empty when evidence_cited is none. The coding frame requires every other column to be filled. The validator enforces the identifier, claim text, URL and date columns and the enumerated values; it does not check notes or the two conditional columns, so those are checked at audit.
 
 ## indicators.csv
 
@@ -61,7 +61,7 @@ Column 1. One row per indicator, 57 rows as of 16 September 2026: the 30 animal 
 | indicator_id | I001 onwards | Identifier used by claims.csv and crosswalk.csv |
 | efsa_consequence | one of the five EFSA welfare consequences | Locomotory disorders, Mastitis, Restriction of movement and resting problems, Inability to perform comfort behaviour, Metabolic disorders |
 | efsa_abm | text | The ABM name as EFSA's table gives it |
-| wq_principle | Good feeding, Good housing, Good health, Good behaviour | Welfare Quality principle |
+| wq_principle | Good feeding, Good housing, Good health, Good behaviour | Welfare Quality principle, named as in Maroto Molina's Table 1. The protocol itself calls the fourth principle Appropriate behaviour |
 | wq_criterion | text | Welfare Quality criterion, one of twelve |
 | wq_measure | text | Welfare Quality measure, one of thirty one |
 | maroto_molina_technology | text | The technology Maroto Molina et al. 2020 identify for the measure, or "Not discussed by Maroto Molina" |

@@ -27,7 +27,7 @@ Work through these steps in order and report on each.
    - UNSUPPORTED: no passage was found in the corpus or on a public page. This is a failure, not a maybe.
    - IMPRECISE: the claim is directionally right but misstates a detail (a rounded number presented as exact, a version date, a partial quote). Say what the precise statement would be.
 
-4. **Check citations against the fixed list** in `CLAUDE.md` under Hard rules. Twelve Threats is Tuyttens, Molento and Benaissa 2022. The transparency framework is Elliott and Werkheiser 2023. The EU PLF blueprint is Berckmans 2017. The measure to technology mapping is Maroto Molina et al. 2020. Stygar et al. 2021 report 129 technologies and 18 externally validated. Any deviation from these is WRONG.
+4. **Check citations against the fixed list** in `CLAUDE.md` under Hard rules. Twelve Threats is Tuyttens, Molento and Benaissa 2022. The transparency framework is Elliott and Werkheiser 2023. The EU PLF blueprint is Guarino, Norton, Berckmans, Vranken and Berckmans 2017, Animal Frontiers 7(1); shortening it to Berckmans 2017 is WRONG. The measure to technology mapping is Maroto Molina et al. 2020. Stygar et al. 2021 report 129 technologies and 18 externally validated. Any deviation from these is WRONG.
 
 5. **Check the mechanical gates.** Run `python scripts/validate_csv.py` and `python scripts/check_corpus.py --local`. Both must exit 0.
 

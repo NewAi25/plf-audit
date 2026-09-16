@@ -41,7 +41,7 @@ Filenames matter: sessions look for these exact names. The "File" link is the UR
 | `farm_animal_care_v5.pdf` | National Dairy FARM Animal Care Reference Manual Version 5. **Missing**, see below | | [FARM animal care page](https://nationaldairyfarm.com/dairy-farm-standards/animal-care/) |
 | `gap_dairy_standard.pdf` | Global Animal Partnership 5 Step standards for dairy cattle v2.0, issued 1 June 2026, 99 pages | [GAP PDF](https://globalanimalpartnership.org/wp-content/uploads/2026/06/G.A.P.-5-Step-Standards-for-Dairy-Cattle-v2.0_-Website.pdf) | [GAP dairy cattle page](https://globalanimalpartnership.org/standards/dairy-cattle/) |
 | `certified_humane_dairy.pdf` | Humane Farm Animal Care standards for dairy cattle, Edition 23, 67 pages | [Certified Humane PDF](https://certifiedhumane.org/wp-content/uploads/DAIRY_CATTLE_STANDARDS.pdf) | [Certified Humane standards page](https://certifiedhumane.org/our-standards/) |
-| `iso_ts_34700_summary.md` | ISO/TS 34700:2016 abstract and scope. **Missing**, see below | | [ISO catalogue page](https://www.iso.org/standard/64749.html) |
+| `iso_ts_34700_summary.md` | ISO/TS 34700:2016, the public catalogue abstract and the informative sections from the Online Browsing Platform (foreword, introduction, scope, normative references, terms). Clauses 4, 5 and Annex A are paid and not included | [ISO catalogue page](https://www.iso.org/standard/64749.html), [OBP preview](https://www.iso.org/obp/ui/#iso:std:iso:ts:34700:ed-1:v1:en) | same |
 
 ## Legal templates (column 4)
 
@@ -72,8 +72,7 @@ Three files need a human with a browser, because the source blocks automated dow
 
 | Filename | Why it is missing | Where to get it |
 |---|---|---|
-| `farm_animal_care_v5.pdf` | nationaldairyfarm.com returns 403 to any non browser request | [Animal Care Reference Manual Version 5](https://nationaldairyfarm.com/product/animal-care-reference-manual-version-5/). The product page may ask for a free order |
-| `iso_ts_34700_summary.md` | iso.org returns 403 to any non browser request | [ISO catalogue page](https://www.iso.org/standard/64749.html) for the abstract, [Online Browsing Platform](https://www.iso.org/obp/ui/#iso:std:iso:ts:34700:ed-1:v1:en) for the scope and contents. Paste into a markdown file with the URL and date at the top, then add a manifest row and run `check_corpus.py --record` |
+| `farm_animal_care_v5.pdf` | nationaldairyfarm.com returns 403 to any non browser request, and the product page sells a printed copy for $10.31 | The PDF is served to browsers at [nationaldairyfarm.com/wp-content/uploads/2024/09/FARM-14787-2023-Animal-Care-Standards-Reference-Manual.pdf](https://nationaldairyfarm.com/wp-content/uploads/2024/09/FARM-14787-2023-Animal-Care-Standards-Reference-Manual.pdf); open it, save as `farm_animal_care_v5.pdf`, then run `check_corpus.py --record --only farm_animal_care_v5.pdf` |
 | `van_erp_rutter_2020.pdf` | CABI Reviews is paywalled, and the [Harper Adams repository copy](https://hau.repository.guildhe.ac.uk/id/eprint/17613/) is restricted until 2100 | The DOI with an institutional subscription, or the repository's request a copy link |
 
 ## Provenance notes

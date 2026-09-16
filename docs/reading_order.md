@@ -27,8 +27,8 @@ Every file is in `corpus/` with its source link in `corpus/README.md`. Read the 
 | 12 | Maroto Molina et al. 2020, `maroto_molina_2020.pdf`, 6 pages | 40 min | Table 1, the Welfare Quality principles, criteria and measures. Then their measure by measure account of what technology could monitor each. This is columns 1 and 2 as they existed before the project. Check three rows of indicators.csv against it while reading |
 | 13 | Stygar et al. 2021, `stygar_2021.pdf`, 15 pages | 60 min | Page 3 for the definitions of external self validation and external independent validation. Table 1 on page 6 for the 18 validated technologies and which column each reference sits in. Table 2 for which traits validated well. The headline: 129 technologies, 18 externally validated |
 | 14 | Stygar supplementary, `stygar_2021_supplementary.xlsx` | 20 min | Sheet 1, the 129 products, is where products.csv came from. Sheet 2 codes the 42 validation studies. Look at the products chosen for the register and the ones left out |
-| 15 | Tuyttens, Molento and Benaissa 2022, `tuyttens_2022.pdf`, 12 pages | 40 min | The twelve threats in four categories. The two direct threats the standard scores: poor external validation and meaningless indicators. The indirect threats, which the scope note answers |
-| 16 | Elliott and Werkheiser 2023, `elliott_werkheiser_2023.pdf`, 11 pages | 30 min | The four kinds of information and the four audiences. Then list what they do not specify: no logging, no lineage, no tamper evidence, no verification mechanism, no scoring. That list is the gap this project fills |
+| 15 | Tuyttens, Molento and Benaissa 2022, `tuyttens_2022.pdf`, 12 pages | 40 min | The twelve threats in four categories. The two direct threats the standard scores: threat 3, poor external validation, and threat 4, focusing on the measurable rather than the most meaningful indicators. The indirect threats, which the scope note answers |
+| 16 | Elliott and Werkheiser 2023, `elliott_werkheiser_2023.pdf`, 11 pages | 30 min | The framework has four parts: audience, content, challenges and strategies. Table 1 lists five audiences (scientists and engineers, farmers, consumers, industry groups, regulators) and five kinds of content. They name independent verification as a strategy but specify no mechanism for it. List what they leave unspecified: what to log, how to trace an alert to its data, how records are kept from being altered, how a claim is scored. That list is the gap this project fills |
 | 17 | Guarino, Norton, Berckmans, Vranken and Berckmans 2017, `berckmans_2017_euplf_blueprint.pdf`, 6 pages | 20 min | The gold standard idea for validating PLF tools. This is where validation thinking in the field started. Note the first author is Guarino |
 | 18 | Rutten et al. 2013, `rutten_2013.pdf`, 26 pages, read the first eight | 30 min | The four level model: technique, data interpretation, integration, decision. The data lineage requirement in column 4 is "can a level IV decision be traced to level I data", in their terms |
 | 19 | Gómez et al. 2021, `gomez_2021.pdf`, skim | 15 min | The same pattern as Stygar for pigs. Cited for the write up, not extracted |
@@ -38,7 +38,7 @@ Every file is in `corpus/` with its source link in `corpus/README.md`. Read the 
 | Step | Read | Time | Look for |
 |---|---|---|---|
 | 20 | EFSA 2023 dairy cows, `efsa_2023_dairy_cows.pdf`, section 4 only, pages 29 to 78 | 90 min | The five welfare consequences and the ABM tables: 16, 17, 18, 27, 31, 32, 33, 42, 46. Each ABM has a definition, a feasibility rating and a sensitivity and specificity note. The feasibility ratings matter: EFSA calls lying time low feasibility because validated monitors are not widely available, which is exactly the gap a sensor standard addresses |
-| 21 | Welfare Quality dairy protocol, `welfare_quality_dairy.pdf`, pages 20 to 45 | 30 min | How each measure is scored on farm. Page 35 for somatic cell count from individual cow records, which is why I007 and I057 are separate rows |
+| 21 | Welfare Quality dairy protocol, `welfare_quality_dairy.pdf`, pages 20 to 45 | 30 min | How each measure is scored on farm. PDF page 35 (printed page 34) for somatic cell count from individual cow records, which is why I007 and I057 are separate rows |
 
 ## Part 4. Certification and law, about three hours
 
@@ -46,9 +46,9 @@ Read these after the indicators, because column 3 is about which indicators the 
 
 | Step | Read | Time | Look for |
 |---|---|---|---|
-| 22 | ICAR page, `icar_validated_sensors.html`, and `icar_section11.pdf` first ten pages | 30 min | Three validated systems, all milk yield or composition. The application checklist, which becomes the disclosure dimension. What ICAR tests and what it never asks about |
+| 22 | ICAR page, `icar_validated_sensors.html`, and `icar_section11.pdf` first ten pages | 30 min | On the saved page: three validated systems, all milk yield or composition, and the application checklist, which becomes the disclosure dimension. In Section 11: what ICAR tests and what it never asks about |
 | 23 | One ICAR validation report, `icar_panazoo_report.pdf`, 4 pages | 10 min | What an ICAR test actually checks: agreement with a reference device. Nothing about logging or access |
-| 24 | RSPCA dairy standards 2026, `rspca_dairy_standards_2026.pdf`, the health and mobility sections | 45 min | Every requirement that names an animal based indicator, and how it is checked. Keep the justification document open beside it |
+| 24 | RSPCA dairy standards 2026, `rspca_dairy_standards_2026.pdf`, the Health section from page 42, including Lameness at page 46 | 45 min | Every requirement that names an animal based indicator, and how it is checked. Keep the justification document open beside it |
 | 25 | FARM Animal Care v5, `farm_animal_care_v5.pdf`, once downloaded | 30 min | The numeric thresholds: locomotion score and lameness benchmarks. This is the industry acceptability proxy |
 | 26 | GAP dairy v2.0 and Certified Humane dairy, skim | 30 min | The same extraction, lighter. GAP is the scheme that launched with a sensor partner |
 | 27 | `eu_data_act_chapter2.md`, Articles 3 to 5 | 20 min | The user's right to access product data and share it with a third party. The access and ownership dimension is this right, applied |
@@ -67,4 +67,4 @@ Read these after the indicators, because column 3 is about which indicators the 
 
 ## Before week 2 starts
 
-Three files still need a browser: `farm_animal_care_v5.pdf`, `iso_ts_34700_summary.md` and `van_erp_rutter_2020.pdf`, see the missing files table in `corpus/README.md`. Send Kevin the Friday message with the theory of change question first. Spot check ten rows of your own choosing in indicators.csv against the sources; if any fails, open a decisions entry before anything else is built on it.
+Two files still need a browser: `farm_animal_care_v5.pdf` and `van_erp_rutter_2020.pdf`, see the missing files table in `corpus/README.md`. Send Kevin the Friday message with the theory of change question first. Spot check ten rows of your own choosing in indicators.csv against the sources; if any fails, open a decisions entry before anything else is built on it.
