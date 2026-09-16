@@ -38,7 +38,7 @@ Filenames matter: sessions look for these exact names. The "File" link is the UR
 | `icar_panazoo_report.pdf` | Panazoo MMI validation test fact sheet, 4 pages | [ICAR PDF](https://www.icar.org/wp-content/uploads/documents/Panazoo_Report_website.pdf) | same page |
 | `rspca_dairy_standards_2026.pdf` | RSPCA welfare standards for dairy cattle, April 2026, 108 pages | [RSPCA science PDF](https://science.rspca.org.uk/documents/d/science/1856_dairy_cattle_welfare_standards_2026_web) | [RSPCA dairy standards page](https://science.rspca.org.uk/sciencegroup/farmanimals/standards/dairycattle) |
 | `rspca_dairy_justification_2026.pdf` | RSPCA standards justification, dairy cattle, 2026, 24 pages | [RSPCA science PDF](https://science.rspca.org.uk/documents/d/science/dairy-sjd-2026) | same page |
-| `farm_animal_care_v5.pdf` | National Dairy FARM Animal Care Reference Manual Version 5. **Missing**, see below | | [FARM animal care page](https://nationaldairyfarm.com/dairy-farm-standards/animal-care/) |
+| `farm_animal_care_v5.pdf` | National Dairy FARM Animal Care Reference Manual Version 5, July 2024 to June 2027, 164 pages | [FARM PDF](https://nationaldairyfarm.com/wp-content/uploads/2024/09/FARM-14787-2023-Animal-Care-Standards-Reference-Manual.pdf) | [FARM animal care page](https://nationaldairyfarm.com/dairy-farm-standards/animal-care/) |
 | `gap_dairy_standard.pdf` | Global Animal Partnership 5 Step standards for dairy cattle v2.0, issued 1 June 2026, 99 pages | [GAP PDF](https://globalanimalpartnership.org/wp-content/uploads/2026/06/G.A.P.-5-Step-Standards-for-Dairy-Cattle-v2.0_-Website.pdf) | [GAP dairy cattle page](https://globalanimalpartnership.org/standards/dairy-cattle/) |
 | `certified_humane_dairy.pdf` | Humane Farm Animal Care standards for dairy cattle, Edition 23, 67 pages | [Certified Humane PDF](https://certifiedhumane.org/wp-content/uploads/DAIRY_CATTLE_STANDARDS.pdf) | [Certified Humane standards page](https://certifiedhumane.org/our-standards/) |
 | `iso_ts_34700_summary.md` | ISO/TS 34700:2016, the public catalogue abstract and the informative sections from the Online Browsing Platform (foreword, introduction, scope, normative references, terms). Clauses 4, 5 and Annex A are paid and not included | [ISO catalogue page](https://www.iso.org/standard/64749.html), [OBP preview](https://www.iso.org/obp/ui/#iso:std:iso:ts:34700:ed-1:v1:en) | same |
@@ -68,11 +68,10 @@ Saved during weeks 1 and 2 into `vendors/<vendor>/`, named `<product_id>_<YYYY-M
 
 ## Missing files, 16 September 2026
 
-Three files need a human with a browser, because the source blocks automated downloads or restricts the file. None of these blocks were worked around.
+One file still needs a human, because the journal is paywalled and the repository copy is restricted. No block was worked around. The ISO summary was retrieved on 16 September 2026 by reading the public catalogue and preview pages in a browser; the FARM manual PDF turned out to be served to a scripted request that carries a browser user agent and a referer, so it was fetched that way and hash verified.
 
 | Filename | Why it is missing | Where to get it |
 |---|---|---|
-| `farm_animal_care_v5.pdf` | nationaldairyfarm.com returns 403 to any non browser request, and the product page sells a printed copy for $10.31 | The PDF is served to browsers at [nationaldairyfarm.com/wp-content/uploads/2024/09/FARM-14787-2023-Animal-Care-Standards-Reference-Manual.pdf](https://nationaldairyfarm.com/wp-content/uploads/2024/09/FARM-14787-2023-Animal-Care-Standards-Reference-Manual.pdf); open it, save as `farm_animal_care_v5.pdf`, then run `check_corpus.py --record --only farm_animal_care_v5.pdf` |
 | `van_erp_rutter_2020.pdf` | CABI Reviews is paywalled, and the [Harper Adams repository copy](https://hau.repository.guildhe.ac.uk/id/eprint/17613/) is restricted until 2100 | The DOI with an institutional subscription, or the repository's request a copy link |
 
 ## Provenance notes

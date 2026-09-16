@@ -49,7 +49,7 @@ Read these after the indicators, because column 3 is about which indicators the 
 | 22 | ICAR page, `icar_validated_sensors.html`, and `icar_section11.pdf` first ten pages | 30 min | On the saved page: three validated systems, all milk yield or composition, and the application checklist, which becomes the disclosure dimension. In Section 11: what ICAR tests and what it never asks about |
 | 23 | One ICAR validation report, `icar_panazoo_report.pdf`, 4 pages | 10 min | What an ICAR test actually checks: agreement with a reference device. Nothing about logging or access |
 | 24 | RSPCA dairy standards 2026, `rspca_dairy_standards_2026.pdf`, the Health section from page 42, including Lameness at page 46 | 45 min | Every requirement that names an animal based indicator, and how it is checked. Keep the justification document open beside it |
-| 25 | FARM Animal Care v5, `farm_animal_care_v5.pdf`, once downloaded | 30 min | The numeric thresholds: locomotion score and lameness benchmarks. This is the industry acceptability proxy |
+| 25 | FARM Animal Care v5, `farm_animal_care_v5.pdf`, 164 pages, the animal observation and lameness sections | 30 min | The numeric thresholds: locomotion score and lameness benchmarks. This is the industry acceptability proxy |
 | 26 | GAP dairy v2.0 and Certified Humane dairy, skim | 30 min | The same extraction, lighter. GAP is the scheme that launched with a sensor partner |
 | 27 | `eu_data_act_chapter2.md`, Articles 3 to 5 | 20 min | The user's right to access product data and share it with a third party. The access and ownership dimension is this right, applied |
 | 28 | `eu_ai_act_art12_13_26.md`, Article 12 and Article 26(6) | 15 min | Automatic logging over the system lifetime, six months minimum retention. The logging dimension borrows this wording |
@@ -67,4 +67,4 @@ Read these after the indicators, because column 3 is about which indicators the 
 
 ## Before week 2 starts
 
-Two files still need a browser: `farm_animal_care_v5.pdf` and `van_erp_rutter_2020.pdf`, see the missing files table in `corpus/README.md`. Send Kevin the Friday message with the theory of change question first. Spot check ten rows of your own choosing in indicators.csv against the sources; if any fails, open a decisions entry before anything else is built on it.
+One file is still missing, `van_erp_rutter_2020.pdf`, see the missing files table in `corpus/README.md`. Send Kevin the Friday message with the theory of change question first. Spot check ten rows of your own choosing in indicators.csv against the sources; if any fails, open a decisions entry before anything else is built on it.
