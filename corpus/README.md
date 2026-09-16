@@ -8,7 +8,7 @@ The source documents live here locally and are not committed. This file lists ev
 |---|---|
 | `maroto_molina_2020.pdf` | Journal of Dairy Research 87(S1) 28 to 33. Cambridge Core, or the open copy at helvia.uco.es (handle 10396/27738) |
 | `stygar_2021.pdf` | PMC8044875, Frontiers in Veterinary Science 8:634338 |
-| `stygar_2021_supplementary.pdf` | Supplementary product table for the above |
+| `stygar_2021_supplementary.xlsx` | Supplementary product table for the above, published as a spreadsheet |
 | `gomez_2021.pdf` | Frontiers in Veterinary Science 8:660565 |
 | `tuyttens_2022.pdf` | PMC9186058, Frontiers in Veterinary Science 9:889623 |
 | `elliott_werkheiser_2023.pdf` | PMC10648797, Animals 13(21) |
@@ -61,3 +61,19 @@ The source documents live here locally and are not committed. This file lists ev
 ## Vendor documentation
 
 Saved during weeks 1 and 2 into `vendors/<vendor>/`, named `<product_id>_<YYYY-MM-DD>_<short_name>.<ext>`, on the day each source is captured. Public pages only.
+
+## Status, 16 September 2026
+
+Twenty six files are in place: nine papers plus the Stygar supplementary spreadsheet, the EFSA opinion and the Welfare Quality protocol, the ICAR page and Section 11 and the three validation reports, four certification standards, and six pasted text files for the legal and course sources.
+
+Three files still need a human with a browser, because the source blocks automated downloads or restricts the file.
+
+| Filename | Why it is missing | Where to get it |
+|---|---|---|
+| `farm_animal_care_v5.pdf` | nationaldairyfarm.com returns 403 to any non browser request | nationaldairyfarm.com, Animal Care Reference Manual Version 5. The product page may ask for a free order |
+| `iso_ts_34700_summary.md` | iso.org returns 403 to any non browser request | iso.org/standard/64749.html, paste the abstract and scope, and the contents from the Online Browsing Platform |
+| `van_erp_rutter_2020.pdf` | CABI Reviews is paywalled, and the Harper Adams repository copy is restricted until 2100 | doi 10.1079/PAVSNNR202015051, or use the repository's request a copy link, or an institutional subscription |
+
+`efsa_2023_calves.pdf` is deliberately not downloaded. It is only needed if calf products enter the product list.
+
+Provenance of the copies that did not come from the publisher's own page, so citations stay accurate. The EFSA opinion is the published PDF mirrored by the Spanish agriculture ministry (mapa.gob.es), identical to the Wiley version, 177 pages. Berckmans 2017 is the KU Leuven Lirias copy. Rutten 2013 is the Utrecht University repository copy and carries a repository cover page. Maroto Molina 2020 is the Cambridge Core PDF. Stygar, Gomez and Tuyttens are the publisher PDFs from Frontiers, and Elliott and Werkheiser is the Europe PMC render.

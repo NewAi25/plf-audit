@@ -23,3 +23,11 @@ Repository created from `docs/PLF_Repo_Spec_For_ClaudeCode.md`. The pass thresho
 **Plan text in Markdown.** `docs/PLF_Audit_Standard_Plan.md` is a text extraction of the .docx, with a header note saying where the resources doc supersedes it (Berckmans 2022 citation, GlobalGAP, product cap).
 
 **Open, to decide before scoring.** `legal_required_somewhere` depends on whether a product is sold in the EU, and `data/products.csv` has no column for that. It also needs a rule for when access_ownership is NA. Both need a decision here before week 4.
+
+## 2026-09-16: corpus assembled
+
+Twenty six of twenty nine expected source files downloaded into `corpus/`, each one checked to confirm it is the document it claims to be. Versions captured: RSPCA dairy standards April 2026 and the matching justification, Global Animal Partnership dairy v2.0 issued 1 June 2026, Certified Humane dairy Edition 23, ICAR Section 11 version October 2020, Welfare Quality dairy cows protocol 2009. The Stygar supplementary product table is a spreadsheet, not a PDF, so it is saved as `stygar_2021_supplementary.xlsx`.
+
+Missing and needing a browser: the FARM Animal Care Version 5 manual and the ISO/TS 34700 abstract, both blocked by bot protection, and van Erp-van der Kooij and Rutter 2020, which is paywalled with the repository copy restricted. None of these blocks were worked around. Provenance of each copy is recorded in `corpus/README.md`, because several came from repository mirrors rather than the publisher.
+
+Recorded from the saved ICAR page in `notes/duplication_check.md`: three validated systems, all milk composition or yield, none welfare. That is the factual basis for the claim in CLAUDE.md, and it holds as of today.
