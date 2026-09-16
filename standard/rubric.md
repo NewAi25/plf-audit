@@ -36,7 +36,7 @@ The scorecard reports two headline numbers for the dairy products: how many are 
 | Dimension | Source regime | Citation |
 |---|---|---|
 | Indicator validity | Published welfare indicators and their mapping to sensors | EFSA 2023 scientific opinion on the welfare of dairy cows, doi 10.2903/j.efsa.2023.7993; Welfare Quality assessment protocol for dairy cattle; Maroto Molina et al. 2020, Journal of Dairy Research 87(S1); Tuyttens, Molento and Benaissa 2022 on indicators that do not mean anything for the animal |
-| Validation evidence | Validation practice in the PLF literature | Stygar et al. 2021, Frontiers in Veterinary Science 8:634338, for internal versus external validation; Gómez et al. 2021, Frontiers in Veterinary Science 8:660565; Berckmans 2017, Animal Frontiers 7(1), for gold standards |
+| Validation evidence | Validation practice in the PLF literature | Stygar et al. 2021, Frontiers in Veterinary Science 8:634338, for internal versus external validation; Gómez et al. 2021, Frontiers in Veterinary Science 8:660565; Guarino, Norton, Berckmans, Vranken and Berckmans 2017, Animal Frontiers 7(1), for gold standards |
 | Logging | EU AI Act, Regulation (EU) 2024/1689 | Article 12 on record keeping and Article 26(6) on retention of at least six months. PLF systems are not high risk under Annex III, so this is borrowed as the EU definition of adequate logging, not cited as a binding rule |
 | Data lineage | Four level model of a sensor system | Rutten et al. 2013, Journal of Dairy Science 96(4); an alert at level IV must be traceable to the level I readings behind it |
 | Access and ownership | EU Data Act, Regulation (EU) 2023/2854 | Chapter II, user access to product data and sharing with third parties, applicable from 12 September 2025 |

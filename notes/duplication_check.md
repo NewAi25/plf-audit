@@ -24,7 +24,7 @@ Not yet checked.
 
 Not yet checked.
 
-## Berckmans 2017
+## Guarino et al. 2017, the EU PLF blueprint
 
 Not yet checked.
 
