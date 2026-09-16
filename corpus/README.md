@@ -68,7 +68,7 @@ Saved during weeks 1 and 2 into `vendors/<vendor>/`, named `<product_id>_<YYYY-M
 
 ## Missing files, 16 September 2026
 
-One file still needs a human, because the journal is paywalled and the repository copy is restricted. No block was worked around. The ISO summary was retrieved on 16 September 2026 by reading the public catalogue and preview pages in a browser; the FARM manual PDF turned out to be served to a scripted request that carries a browser user agent and a referer, so it was fetched that way and hash verified.
+One file still needs a human, because the journal is paywalled and the repository copy is restricted. No block was worked around. The ISO summary was retrieved on 16 September 2026 by reading the public catalogue and preview pages in a browser; the FARM manual PDF is sometimes served to a scripted request that carries a browser user agent and a referer, and was fetched that way and hash verified; the server answered 403 to the same request after several downloads, so its manifest row is browser_only and only the local hash is checked.
 
 | Filename | Why it is missing | Where to get it |
 |---|---|---|
