@@ -21,7 +21,9 @@ WARN, not a FAIL: the link is not proven, and must be opened in a browser.
     python scripts/check_corpus.py --only a.pdf b.pdf   restrict to named files
 
 Standard library only, except pypdf for binary_stamped rows. A file with
-status "missing" in the manifest is reported but does not fail the check.
+status "missing" in the manifest is reported but does not fail the check. Status
+"browser_only" marks a file retrieved by hand from a site that refuses scripted
+requests; it gets the local hash check only.
 """
 import csv
 import hashlib
@@ -88,6 +90,10 @@ def check_row(r, network):
     path = CORPUS / r["filename"]
     if r["status"] == "missing":
         return "missing", "not downloaded, needs a browser (see corpus/README.md)"
+    browser_note = ""
+    if r["status"] == "browser_only" and network:
+        network = False
+        browser_note = "; source refuses scripted requests, retrieved in a browser, so only the local hash is checked"
     if not path.exists():
         return "FAIL", "file not in corpus/"
     local = path.read_bytes()
@@ -96,7 +102,7 @@ def check_row(r, network):
     if sha256(local) != r["sha256"]:
         return "FAIL", "local file has changed since the manifest was recorded"
     if not network:
-        return "ok", "local hash matches"
+        return "ok", "local hash matches" + browser_note
     try:
         status, remote = fetch(r["url"])
     except Exception as e:
