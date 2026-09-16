@@ -31,3 +31,21 @@ Twenty six of twenty nine expected source files downloaded into `corpus/`, each 
 Missing and needing a browser: the FARM Animal Care Version 5 manual and the ISO/TS 34700 abstract, both blocked by bot protection, and van Erp-van der Kooij and Rutter 2020, which is paywalled with the repository copy restricted. None of these blocks were worked around. Provenance of each copy is recorded in `corpus/README.md`, because several came from repository mirrors rather than the publisher.
 
 Recorded from the saved ICAR page in `notes/duplication_check.md`: three validated systems, all milk composition or yield, none welfare. That is the factual basis for the claim in CLAUDE.md, and it holds as of today.
+
+## 2026-09-16: how indicators.csv was built
+
+The indicator set is the union of two published sources, not a selection I made. It holds the 29 animal based measures EFSA 2023 lists in its ABM tables for the five welfare consequences (Tables 16, 17, 18, 27, 31, 32, 33, 42 and 46) and the 31 measures of the Welfare Quality dairy protocol, which Maroto Molina reproduce in their Table 1. That gives 55 rows. Welfare Quality defines no measure for thermal comfort, so that row carries the criterion with an empty measure.
+
+An EFSA measure and a Welfare Quality measure are joined into one row only where EFSA itself cites Welfare Quality for the definition, or where the two names are identical. That rule produced 7 joins. Everything else stays unjoined, because deciding that two differently named measures are the same thing is a welfare science judgement and not mine to make. The joins I am least sure about are in kevin_questions.md.
+
+The maroto_molina_feasible column codes technology readiness as the paper describes it, not whether the measure matters. Yes means they identify commercially available technology. Partial means research level technology, technology needing adaptation, or a substitute measure they propose. No means they say sensors cannot provide the measure. Not_covered means the paper does not discuss it, which is true of most EFSA only measures. Counts today: 12 yes, 26 partial, 2 no, 15 not_covered.
+
+## 2026-09-16: how products.csv was built
+
+Twenty products plus the AI4Animals comparator. Seventeen are dairy sensor products from the Stygar 2021 appendix, chosen to cover every sensor type in the schema and to favour vendors that publish documentation, with eight of the eighteen products Stygar flags as having validation studies included. Three are the systems on the ICAR validated list. That is at the top of the 15 to 20 range agreed in Part 1 of the resources doc.
+
+The ICAR three are in the register even though they are milk analysers rather than welfare products. Whether an ICAR validated system makes a welfare claim at all is a finding, and if the answer is no, that is worth reporting.
+
+Two schema frictions, both recorded rather than fixed. The sensor_type enum has no value for a leg mounted accelerometer or a load cell plate, so those four products are coded other with the real mounting in notes. And stygar_validation set to external means the product is flagged in the Stygar appendix as having validation studies; their appendix table 1 does not split self validation from independent validation product by product, although their headline figure is 18 externally validated of 129. Before any of this is used as evidence in the register, that distinction has to be resolved from their Table 2, and the coding frame rule on evidence_cited depends on it.
+
+Marketing URLs are the ones Stygar published in 2021 and have not been re-verified. The market scan re-verifies each one and adds manual, developer documentation and patent links.

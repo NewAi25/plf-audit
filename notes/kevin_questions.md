@@ -14,3 +14,11 @@ Steering questions, and every welfare science call I will not make myself. Unsur
 ## Answered
 
 None yet.
+
+### Added 16 September 2026, from building indicators.csv
+
+7. **Bulk milk somatic cell count.** EFSA scores somatic cell count in the bulk tank. Welfare Quality scores milk somatic cell count from herd records. I have joined them as one indicator (I007). Is that right, or are they two indicators because the sampling unit differs?
+8. **Body condition score.** Welfare Quality uses it under absence of prolonged hunger. EFSA uses it as an ABM for subclinical ketosis. I have joined them as one indicator (I023) with a note. One indicator or two?
+9. **Integument alterations.** EFSA splits hock alterations and knee alterations into two ABMs, both citing the Welfare Quality 3 point scale. I have two rows (I004, I005) that both point at the single Welfare Quality measure. Correct, or should they collapse?
+10. **Scope of column 1.** Twenty two EFSA ABMs have no Welfare Quality equivalent, including step activity, walking distance, speed, lying time and lying bout frequency, which are exactly the things sensors measure well. Are these legitimate column 1 indicators, or is column 1 Welfare Quality only? This decides whether a product measuring lying time is measuring a validated indicator directly or a proxy, so it changes the indicator validity score for most of the register.
+11. **Rows nothing can measure.** Fifteen indicators are marked not_covered because Maroto Molina does not discuss them, and two are marked no because they say sensors cannot provide the measure. Keep them in the crosswalk as evidence of what the market ignores, or drop them?
