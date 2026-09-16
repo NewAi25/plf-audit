@@ -1,0 +1,7 @@
+# Corpus files are large and some are copyrighted, including the pasted .md texts.
+# Only the source list is committed. See notes/decisions.md, 2026-09-16.
+corpus/*
+!corpus/README.md
+__pycache__/
+*.pyc
+.DS_Store
