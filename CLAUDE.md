@@ -34,3 +34,5 @@ Primary user: a welfare certifier accepting sensor evidence in place of inspecti
 - Work in small verified batches: ten claims, show them, continue. Three products scored, show them, continue.
 - If a corpus file is missing, say so and stop. Never substitute recollection for a source.
 - End every session by updating notes/weekly_status.md and committing with a message naming the week and the artifact.
+- Never push without a passing audit. Run the /audit skill: mechanical checks, then the research-auditor agent verifies every factual claim in the unpushed changes against corpus/ and the live web. Push only on AUDIT: PASS, after logging the result in notes/audit_log.md. The pre push hook in .githooks/ enforces this; enable it once per clone with `git config core.hooksPath .githooks`.
+- Every corpus file has a row in corpus/manifest.csv with the exact URL its bytes came from and a SHA256. scripts/check_corpus.py verifies both. A new corpus file is not usable until it has a manifest row.

@@ -31,7 +31,7 @@ SCHEMAS = {
         "enums": {
             "sensor_type": {"collar_accelerometer", "ear_tag", "bolus", "camera", "milking_system", "other"},
             "stygar_listed": YES_NO,
-            "stygar_validation": {"none", "internal", "external", "not_listed"},
+            "stygar_validation": {"none", "external_self", "external_independent", "not_listed"},
             "icar_validated": YES_NO,
             "source": {"stygar", "icar", "market_scan", "course"},
             "comparator": YES_NO,
